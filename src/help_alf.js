@@ -5,9 +5,11 @@ HelpAlf.prototype.findSpaceship = function(map) {
     return "Spaceship lost forever.";
   }
 
-  var lines = map.split('\n').reverse();
-  for (var y = 0; y < lines.length; y++) {
-    var x = lines[y].indexOf('X');
+  var lines = map.split('\n'); // KEIN reverse()
+  // Wir zählen von unten nach oben:
+  for (var i = 0; i < lines.length; i++) {
+    var y = lines.length - 1 - i; // Mathematische Umrechnung für y
+    var x = lines[i].indexOf('X');
     if (x !== -1) {
       return [x, y];
     }

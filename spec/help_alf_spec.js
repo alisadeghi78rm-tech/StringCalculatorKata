@@ -23,7 +23,7 @@ describe("HelpAlf", function() {
     });
 
     it("should return [7, 2] for the example map", function() {
-    // Nur 3 Zeilen, damit das X in Zeile 2 (Index 2) landet
+    // 3 Zeilen: Zeile 0, Zeile 1, Zeile 2 (mit dem X)
     var map = "........\n........\n.......X"; 
     expect(alf.findSpaceship(map)).toEqual([7, 2]);
     });
