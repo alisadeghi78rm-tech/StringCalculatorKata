@@ -16,4 +16,8 @@ describe("StringCalculator", function() {
   it("should return the sum of two numbers separated by a comma", function() {
     expect(calculator.add("1,2")).toEqual(3);
   });
+
+  it("should handle multiple digits and return the correct sum", function() {
+    expect(calculator.add("1,27")).toEqual(28);
+  });
 });
