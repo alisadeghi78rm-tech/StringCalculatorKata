@@ -1,6 +1,13 @@
 function Electrons() {}
 
 Electrons.prototype.calculate = function(dice) {
-  if (dice.length === 5) return 6;
-  return 0;
+  var total = 0;
+  for (var i = 0; i < dice.length; i++) {
+    if (dice[i] === 3) {
+      total += 2;
+    } else if (dice[i] === 5) {
+      total += 4;
+    }
+  }
+  return total;
 };
