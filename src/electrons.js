@@ -1,5 +1,6 @@
 function Electrons() {}
 
 Electrons.prototype.calculate = function(dice) {
-  return 6;
+  if (dice.length === 5) return 6;
+  return 0;
 };
