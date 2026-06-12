@@ -22,4 +22,9 @@ describe("HelpAlf", function() {
     expect(alf.findSpaceship(map)).toEqual([0, 0]);
     });
 
+    it("should return [7, 2] for the example map", function() {
+    var map = "........\n........\n.......X\n........\n........\n........";
+    expect(alf.findSpaceship(map)).toEqual([7, 2]);
+    });
+
 });
