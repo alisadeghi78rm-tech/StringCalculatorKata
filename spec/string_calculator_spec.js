@@ -1,9 +1,11 @@
-describe('String Calculator', function() {
-	beforeEach(function() {
-		calculator = new StringCalculator();
-	});
+describe("StringCalculator", function() {
+  var calculator;
 
-	it('should return 0 for an empty string', function() {
-		expect(calculator.add('')).toEqual(0);
-	});
+  beforeEach(function() {
+    calculator = new StringCalculator();
+  });
+
+  it("should return 0 for an empty string", function() {
+    expect(calculator.add("")).toEqual(0);
+  });
 });
